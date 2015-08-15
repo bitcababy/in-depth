@@ -173,7 +173,7 @@
             <column name="block">A</column>
             <column name="year">2014</column>
             <column name="which_occurrences">all</column>
-            <column name="room">8</column>
+            <column name="room">18</column>
             <column name="teacher_id">hosmerc</column>
         </table>
         <table name="sections2014">
