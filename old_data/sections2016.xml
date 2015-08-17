@@ -449,6 +449,16 @@
         </table>
         <table name="sections2016">
             <column name="dept_id">1</column>
+            <column name="course_num">111</column>
+            <column name="semester">0</column>
+            <column name="block">D</column>
+            <column name="year">2016</column>
+            <column name="which_occurrences">all</column>
+            <column name="room">0</column>
+            <column name="teacher_id">mclaughlinj</column>
+        </table>
+        <table name="sections2016">
+            <column name="dept_id">1</column>
             <column name="course_num">341</column>
             <column name="semester">0</column>
             <column name="block">G</column>
