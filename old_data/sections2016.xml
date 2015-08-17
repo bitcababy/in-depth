@@ -189,7 +189,7 @@
         </table>
         <table name="sections2016">
             <column name="dept_id">1</column>
-            <column name="course_num">334</column>
+            <column name="course_num">336</column>
             <column name="semester">2</column>
             <column name="block">F</column>
             <column name="year">2016</column>
