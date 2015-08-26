@@ -105,7 +105,7 @@ class Section
     if self.semester == ::Durations::FULL_YEAR
       return "#{self.teacher.formal_name}, Block #{self.block}"
     else
-      return "#{self.teacher.formal_name}, Block #{self.block} (sem #{self.semester})"
+      return "#{self.teacher.formal_name}, Block #{self.block} (sem #{Durations.semester_to_i(semester)})"
     end
   end
 
