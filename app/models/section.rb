@@ -98,7 +98,11 @@ class Section
   end
 
   def label_for_teacher
-    return "#{self.course.short_name || self.course.full_name}, Block #{self.block}"
+    if self.semester == ::Durations::FULL_YEAR
+      return "#{self.course.short_name || self.course.full_name}, Block #{self.block}"
+    else
+      return "#{self.course.short_name || self.course.full_name}, Block #{self.block} (sem #{Durations.semester_to_i(semester)})"
+    end
   end
 
   def menu_label
