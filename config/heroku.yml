@@ -1,6 +1,6 @@
 #
 # Format:
-# 
+#
 # <stage name>:
 #   app: <Heroku app name>
 #   stack: <Heroku stack, optional>
@@ -9,9 +9,9 @@
 #   config:
 #     - <Heroku config:var name>: <Heroku config:var value>
 #
-production: 
-  app: in-depth
-  stack: cedar
+production:
+  app: cedar-14-indepth
+  stack: cedar-14
   tag: production/*
   config:
     BUNDLE_WITHOUT: "development:test"
@@ -19,41 +19,3 @@ production:
   addons:
     - mongolab:starter
     - scheduler:standard
-    - memcachier:5mb
-
-staging:
-  stack: cedar
-  app: in-depth-staging
-  config: &default
-    BUNDLE_WITHOUT: "development:test"
-  addons:
-    - mongolab:starter
-    - scheduler:standard
-    - memcachier:5mb
-
-testing:
-  stack: cedar
-  app: in-depth-testing
-  config: *default
-  addons:
-    - mongolab:starter
-    - scheduler:standard
-    - memcachier:5mb
-
-viewing:
-  stack: cedar
-  app: in-depth-viewing
-  config: *default
-  addons:
-    - mongolab:starter
-    - scheduler:standard
-    - memcachier:5mb
-
-demo: 
-  stack: cedar
-  app: in-depth-demo
-  config: *default
-  addons:
-    - mongolab:starter
-    - scheduler:standard
-    - memcachier:5mb
