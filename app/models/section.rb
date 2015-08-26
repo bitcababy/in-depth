@@ -39,7 +39,7 @@ class Section
 
   scope :current,               -> { where(year: Settings.academic_year) }
   scope :for_block,             ->(b) { where(block: b) }
-  # scope :for_first_semester,    ->{ where(semester: Durations::FIRST_SEMESTER) } 
+  # scope :for_first_semester,    ->{ where(semester: Durations::FIRST_SEMESTER) }
   # scope :for_second_semester,    ->{ where(semester:Durations::SECOND_SEMESTER) }
   # scope :for_semester,          ->(s){ (s == Course::FIRST_SEMESTER) ? for_first_semester : for_second_semester }
   scope :for_year,              ->(y) { where(year: y) }
@@ -66,7 +66,7 @@ class Section
   #   return sec
   # end
 
-  def change_sas_to(new_section)    
+  def change_sas_to(new_section)
     return if self.to_param == new_section.to_param
     self.section_assignments.each {|sa| sa.section = new_section}
     new_section.touch
@@ -105,7 +105,7 @@ class Section
     if self.semester == ::Durations::FULL_YEAR
       return "#{self.teacher.formal_name}, Block #{self.block}"
     else
-      return "#{self.teacher.formal_name}, Block #{self.extended_block}"
+      return "#{self.teacher.formal_name}, Block #{self.block} (sem #{self.semester})"
     end
   end
 
