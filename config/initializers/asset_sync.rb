@@ -1,7 +1,7 @@
 AssetSync.configure do |config|
   config.fog_provider = 'Rackspace'
   config.rackspace_username ='mer'
-  config.rackspace_api_key = '17b1fba2e589dd68a75040f7b963b343'
+  config.rackspace_api_key = '1152da795a1c8559e0457bf14dbe3780'
 
   # if you need to change rackspace_auth_url (e.g. if you need to use Rackspace London)
   # config.rackspace_auth_url = "lon.auth.api.rackspacecloud.com"
