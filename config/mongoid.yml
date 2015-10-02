@@ -94,4 +94,11 @@ production:
       uri: <%= ENV['MONGOLAB_URI'] %>
   options:
     identity_map_enabled: true
+<% else %>
+production:
+  sessions:
+    default:
+      uri: mongodb://heroku_zmr85mck:2sqtl1ngosuqj98ahu8kgg4vhq@ds027804-a0.mongolab.com:27804/in-depth-production
+  options:
+    identity_map_enabled: true
 <% end %>
