@@ -7,12 +7,12 @@
 		/ = stylesheet_link_tag "application-screen", media: "screen"
 		/ = stylesheet_link_tag "application-print", media: "print"
 		= javascript_include_tag "application"
-		
+		= favicon_link_tag
 		= csrf_meta_tags
 
 	%body
 		/ #signinform.nodisplay= render partial: 'users/sessions/signin_form'
-	
+
 		%header#page_header= content_for?(:page_header) ? (content_for :page_header) : "Fix me!"
 		= render 'menus/menubar'
 		%div#main.clear
@@ -32,10 +32,10 @@
 / 			height: 300
 / 			modal: true
 / 			resizable: true
-/ 			buttons: 
+/ 			buttons:
 / 				'Sign in': -> $('form', '#signinform').submit()
 / 				'Cancel': -> 	$('#signinform').dialog "close"
-/ 
+/
 / 		$('#signin')
 / 		.bind( 'click', (evt) ->
 / 			$('#signinform').dialog "open")
