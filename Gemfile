@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'rails', '>= 3.2.6', '<4.0.0'
+gem 'rails', '>= 3.2.16', '<4.0.0'
 gem 'railties'
 
 group :production do
@@ -141,4 +141,3 @@ group :test do
 	gem 'guard-sass', :require => false
   gem 'rb-fsevent', '~>0.9.1'
 end
-

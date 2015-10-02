@@ -421,7 +421,7 @@ DEPENDENCIES
   mongoid-history
   mongoid-rspec
   pry
-  rails (>= 3.2.6, < 4.0.0)
+  rails (>= 3.2.16, < 4.0.0)
   rails_12factor
   rails_serve_static_assets
   rails_warden
