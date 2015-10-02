@@ -5,8 +5,8 @@ InDepth::Application.configure do
   config.cache_classes = true
 
   # Full error reports are disabled and caching is turned on
-  config.consider_all_requests_local       = false
-  config.action_controller.perform_caching = true
+  config.consider_all_requests_local       = true
+  config.action_controller.perform_caching = false
   config.assets.initialize_on_precompile = false
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
@@ -65,4 +65,3 @@ InDepth::Application.configure do
   config.assets.false = true # Turn off after file browser works
 
 end
-
