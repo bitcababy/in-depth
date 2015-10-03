@@ -36,6 +36,9 @@ GEM
       multi_json (~> 1.0)
     addressable (2.3.5)
     arel (3.0.3)
+    asset_sync (1.0.0)
+      activemodel
+      fog (>= 1.8.0)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
     browser (0.3.2)
@@ -372,6 +375,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  asset_sync
   browser
   bson_ext
   bundler
