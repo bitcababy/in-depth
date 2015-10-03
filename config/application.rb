@@ -16,9 +16,6 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-# sort of from https://github.com/carrierwaveuploader/carrierwave/wiki/How-to:-Make-Carrierwave-work-on-Heroku
-# use Rack::Static, urls: ['/carrierwave'], root: 'tmp'
-
 module InDepth
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -26,15 +23,16 @@ module InDepth
     # -- all .rb files in that directory are automatically loaded.
 
     # From http://www.peeep.us/92a9f4b0
-   #  initializer :after_append_asset_paths, 
-   #    group: :all, 
-   #    after: :append_assets_paths do
-   #    config.assets.paths.unshift Rails.root.join("app", "assets", "stylesheets", "screen", "images")
-	config.encoding = "utf-8"
+    initializer :after_append_asset_paths,
+      group: :all,
+      after: :append_assets_paths do
+      config.assets.paths.unshift Rails.root.join("app", "assets", "stylesheets", "screen", "images")
+	    config.encoding = "utf-8"
+      config.assets.paths.unshift Rails.root.join("app", "assets", "javascripts", "ckeditor")
 
-   # #    config.assets.paths.unshift Rails.root.join("app", "assets", "javascripts", "ckeditor", "skins", "moonocolor")
-   # #    config.assets.paths.unshift Rails.root.join("app", "assets", "javascripts", "ckeditor", "skins", "moonocolor", "images")
-   # end
+      # config.assets.paths.unshift Rails.root.join("app", "assets", "javascripts", "ckeditor", "skins", "moonocolor")
+      # config.assets.paths.unshift Rails.root.join("app", "assets", "javascripts", "ckeditor", "skins", "moonocolor", "images")
+    end
 
     config.autoload_paths += %W(#{config.root}/extras)
     config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
@@ -65,7 +63,7 @@ module InDepth
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-    
+
     config.active_support.deprecation = :notify
 
 		config.generators do |g|
@@ -76,4 +74,4 @@ module InDepth
 		end
 
   end
-end 
+end
