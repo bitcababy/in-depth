@@ -24,7 +24,7 @@ group :assets do
   gem 'turbo-sprockets-rails3'
 end
 
-gem 'asset_sync'
+# gem 'asset_sync'
 gem 'jquery-rails'
 gem 'thin'
 
