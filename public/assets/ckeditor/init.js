@@ -1,4 +1,4 @@
-(function(){("undefined"==typeof window.CKEDITOR_BASEPATH||null===window.CKEDITOR_BASEPATH)&&(window.CKEDITOR_BASEPATH="http://files.westonmath.org/assets/assets/ckeditor/")}).call(this),/*
+(function(){("undefined"==typeof window.CKEDITOR_BASEPATH||null===window.CKEDITOR_BASEPATH)&&(window.CKEDITOR_BASEPATH="/assets/assets/ckeditor/")}).call(this),/*
 Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
