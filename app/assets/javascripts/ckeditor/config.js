@@ -90,7 +90,7 @@ CKEDITOR.editorConfig = function(config) {
     //   }
     // });
 
-    config.skin = 'moonocolor';
+    config.skin = 'moono';
 
     // The toolbar groups arrangement, optimized for two toolbar rows.
     config.toolbarGroups = [{
