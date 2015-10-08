@@ -6,7 +6,7 @@ Ckeditor.setup do |config|
   # available as additional gems.
   require "ckeditor/orm/mongoid"
 
-    config.assets_languages = ['en']
+    # config.assets_languages = ['en']
   # Allowed image file types for upload.
   # Set to nil or [] (empty array) for all file types
   # config.image_file_types = ["jpg", "jpeg", "png", "gif", "tiff"]
@@ -23,5 +23,5 @@ Ckeditor.setup do |config|
   # config.attachment_file_model { Ckeditor::AttachmentFile }
 
   # Paginate assets
-  config.default_per_page = 24
+  # config.default_per_page = 24
 end
