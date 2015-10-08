@@ -5,7 +5,7 @@ development: &defaults
     default: &default_session
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      database: in_depth_development
+      database: in-depth-development
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
@@ -92,6 +92,13 @@ production:
   sessions:
     default:
       uri: <%= ENV['MONGOLAB_URI'] %>
+  options:
+    identity_map_enabled: true
+<% else %>
+production:
+  sessions:
+    default:
+      uri: mongodb://heroku_zmr85mck:2sqtl1ngosuqj98ahu8kgg4vhq@ds027804-a0.mongolab.com:27804/in-depth-production
   options:
     identity_map_enabled: true
 <% end %>
