@@ -61,7 +61,7 @@ InDepth::Application.configure do
 
   # Send deprecation notices to registered listeners
   # config.active_support.deprecation = :silence
-  config.assets.prefix = "/production/assets"
+  config.assets.prefix = "production/assets"
   config.assets.debug = true # Turn off after file browser works
 
 end
