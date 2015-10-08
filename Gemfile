@@ -73,7 +73,7 @@ gem 'memcache-client'
 gem 'settingslogic', :git => 'git://github.com/bitcababy/settingslogic.git'
 gem 'kaminari'
 
-gem 'ckeditor', '~> 4.0.0'
+gem 'ckeditor', '4.0.4'
 
 # Uploads
 gem 'carrierwave'
@@ -141,4 +141,3 @@ group :test do
 	gem 'guard-sass', :require => false
   gem 'rb-fsevent', '~>0.9.1'
 end
-
