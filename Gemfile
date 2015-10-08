@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'rails', '>= 3.2.16', '<4.0.0'
+gem 'rails', '>= 3.2.6', '<4.0.0'
 gem 'railties'
 
 group :production do
@@ -73,7 +73,7 @@ gem 'memcache-client'
 gem 'settingslogic', :git => 'git://github.com/bitcababy/settingslogic.git'
 gem 'kaminari'
 
-gem 'ckeditor', '~> 4.0.0'
+gem 'ckeditor', '4.0.4'
 
 # Uploads
 gem 'carrierwave'
