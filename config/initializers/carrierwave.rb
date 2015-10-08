@@ -10,6 +10,7 @@ CarrierWave.configure do |config|
     provider: 'Rackspace',
     rackspace_username: 'mer',
     rackspace_api_key: '1152da795a1c8559e0457bf14dbe3780',
+    rackspace_region: :dfw
   }
   config.fog_directory = 'whsmd'
   config.fog_attributes = {'Cache-Control'=>'max-age=315576000'}
