@@ -4,9 +4,9 @@ ruby '2.0.0'
 
 gem 'rails', '>= 3.2.6', '<4.0.0'
 gem 'railties'
+gem 'rails_12factor'
 
 group :production do
-  gem 'rails_12factor'
   gem 'rails_serve_static_assets'
 end
 
@@ -73,7 +73,7 @@ gem 'memcache-client'
 gem 'settingslogic', :git => 'git://github.com/bitcababy/settingslogic.git'
 gem 'kaminari'
 
-gem 'ckeditor', '4.0.4'
+gem 'ckeditor', '~>4.0.0'
 
 # Uploads
 gem 'carrierwave'
@@ -113,12 +113,11 @@ group :development, :test do
   gem 'foreman'
 # gem 'perftools.rb', :git => 'git://github.com/tmm1/perftools.rb.git'
   # To use debugger
-  gem 'debugger'
   # gem 'inherited_resources'
 end
 
 group :development do
-	gem 'haml-rails'
+	gem 'haml-rails', '< 4.0.0'
 end
 
 group :test do
