@@ -20,6 +20,8 @@ stashed
 .akephalos
 .sass-cache
 backups
+.ruby-gemset*
+.ruby-version*
 *.swp
 
 lib/plugins/

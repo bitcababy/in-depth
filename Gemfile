@@ -4,10 +4,9 @@ ruby '2.0.0'
 
 gem 'rails', '>= 3.2.6', '<4.0.0'
 gem 'railties'
-gem 'rails_log_stdout'
-gem 'rails_12factor'
 
 group :production do
+  gem 'rails_12factor'
   gem 'rails_serve_static_assets'
 end
 
